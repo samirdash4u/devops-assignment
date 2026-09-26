@@ -1,0 +1,21 @@
+# Terraform working directory
+**/.terraform/*
+
+# Terraform state - never commit state files
+*.tfstate
+*.tfstate.*
+
+# Terraform plans can contain sensitive values
+*.tfplan
+
+# Local variable files can contain credentials or environment-specific values
+*.tfvars
+*.tfvars.json
+!**/*.tfvars.example
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Terraform lock file should normally be committed for provider reproducibility.
+# Keep it tracked when generated.
